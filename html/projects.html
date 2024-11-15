@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kişisel Portföy - Projelerim</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="../images/my_foto.jpeg"
+        alt="Profil Fotoğraf"
+        class="profile-photo"
+      />
+      <h1>Projelerim</h1>
+      <nav>
+        <a href="../index.html">Anasayfa</a>
+        <a href="about.html">Hakkımda</a>
+        <a href="projects.html">Projelerim</a>
+        <a href="contact.html">İletişim</a>
+      </nav>
+    </header>
+
+    <section id="projects">
+      <h2>Projelerim</h2>
+
+      <div class="project-filters">
+        <button onclick="filterProjects('latest')">En Son Projeler</button>
+        <button onclick="filterProjects('popular')">
+          En Beğenilen Projeler
+        </button>
+      </div>
+
+      <div id="project-list" class="project-list">
+        <div class="project-card" data-category="latest">
+          <img
+            src="../images/real_time_traffic_density_detect.png"
+            alt="Real Time Traffic Density Detect"
+          />
+          <div class="project-info">
+            <h3>Real Time Traffic Density Detect</h3>
+            <p>
+              YOLOv8'in gerçek zamanlı tespit yetenekleriyle trafik yoğunluğu
+              tahmini ve kentsel yönetim çözümleri.
+            </p>
+            <button
+              class="learn-more"
+              onclick="showProjectDetails('trafficDensity')"
+            >
+              Daha Fazla Bilgi
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="popular">
+          <img
+            src="../images/Face_recognation.png"
+            alt="Live Face Recognition"
+          />
+          <div class="project-info">
+            <h3>Live Face Recognition</h3>
+            <p>
+              Web kamerası ile canlı yüz tanıma ve referans görüntü ile
+              eşleştirme sistemi.
+            </p>
+            <button
+              class="learn-more"
+              onclick="showProjectDetails('faceRecognition')"
+            >
+              Daha Fazla Bilgi
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="latest">
+          <img
+            src="../images/smoke_detect.jpeg"
+            alt="Fire and Smoke Detection"
+          />
+          <div class="project-info">
+            <h3>Fire and Smoke Detection</h3>
+            <p>
+              Sistem, video görüntülerini işleyerek yangın ve dumanı gerçek
+              zamanlı olarak tespit edebilir ve bu bilgileri görüntü üzerinde
+              etiketleyerek hızlı müdahale imkanı sunabilir.
+            </p>
+            <button
+              class="learn-more"
+              onclick="showProjectDetails('smoke_detect')"
+            >
+              Daha Fazla Bilgi
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
